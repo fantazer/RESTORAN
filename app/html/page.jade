@@ -1,7 +1,114 @@
 <!DOCTYPE html>
 html(lang="en")
-head
-	meta(charset="UTF-8")
-	title Document
+	//Include header
+	include ./block_html/head.jade
 body
+	include ./block_html/header.jade
 	
+	.catalog.container
+		.catalog-wraper
+
+			.catalog-title
+				.catalog-title-text 
+					span Каталог
+			.catalog-block
+				.cotalog-left
+					.cotalog-left-menu
+						.cotalog-left-menu-el
+							a(href="#") Моноблоки
+						.cotalog-left-menu-el
+							a(href="#") Моноблоки
+						.cotalog-left-menu-el
+							a(href="#") Моноблоки
+						.cotalog-left-menu-el
+							a(href="#") Моноблоки
+						.cotalog-left-menu-el
+							a(href="#") Моноблоки
+						.cotalog-left-menu-el
+							a(href="#") Моноблоки
+						.cotalog-left-menu-el
+							a(href="#").active Моноблоки
+							.cotalog-left-menu-el-sub
+								a(href="#") Сканеры
+								a(href="#") Кассовые ленты
+					.cotalog-left-filter
+						.cotalog-left-filter-title 
+							.cotalog-left-filter-title-text Вендер
+							i.fa.fa-caret-up
+						.cotalog-left-filter-checkbox
+							- for (var x = 0; x < 7; x++)
+								.cotalog-left-filter-checkbox-el
+									input(type="checkbox"  id="r#{x}") 
+									label(for="r#{x}") 
+										span 
+										text CHeckway
+						.filter-ruler
+							img(src="img/stat-calck.png", alt="")
+						.cotalog-left-filter-title 
+							.cotalog-left-filter-title-text Характеристики
+							i.fa.fa-caret-up
+						.cotalog-left-filter-char
+							.cotalog-left-filter-char-el
+								.cotalog-left-filter-char-el-text Скорость сканирования
+								select.selectpicker
+									option lorem 1
+									option lorem 2
+									option lorem 3
+									option lorem 4
+							.cotalog-left-filter-char-el
+								.cotalog-left-filter-char-el-text Точность сканирования
+								select.selectpicker
+									option lorem 1
+									option lorem 2
+									option lorem 3
+									option lorem 4
+							.cotalog-left-filter-char-el
+								.cotalog-left-filter-char-el-text Дальность сканирования
+								select.selectpicker
+									option lorem 1
+									option lorem 2
+									option lorem 3
+									option lorem 4
+					.cotalog-left-filter-footer
+						a(href="#")	подобрать
+				.cotalog-right
+					.cotalog-right-top
+						.cotalog-right-top-el
+							.cotalog-right-top-el-text Производитель:
+							select.selectpicker
+								option lorem 1
+								option lorem 2
+								option lorem 3
+								option lorem 4
+						.cotalog-right-top-el
+							.cotalog-right-top-el-text Сортировать:
+							select.selectpicker
+								option lorem 1
+								option lorem 2
+								option lorem 3
+								option lorem 4
+						.cotalog-right-top-el
+							.cotalog-right-top-el-text Показывать по:
+							select.selectpicker
+								option 1
+								option 2
+								option 3
+								option 4
+					.cotalog-right-wraper
+						- for (var x = 0; x < 15; x++)
+							.cotalog-right-el
+								.cotalog-right-el-img
+									img(src="img/elemet.png", alt="")
+								.cotalog-right-el-title Ручной сканер Zebex Z-3000 
+								.cotalog-right-el-info
+									.cotalog-right-el-info-isset В наличии
+									.cotalog-right-el-info-price 25 000 р
+								a.cotalog-right-el-get в корзину
+				
+
+
+
+	include ./block_html/footer.jade
+
+	//Include Footer
+	include ./block_html/script.jade

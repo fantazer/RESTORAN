@@ -201,7 +201,7 @@ gulp.task('see',function(){
 //default
 gulp.task('img',gulp.series( 'imagePng' , 'imageJpg'));
 gulp.task('default', gulp.parallel('serve','see'));
-gulp.task('build',gulp.series('sourcemaps','copy:font','prefix','img','make'));
+gulp.task('build',gulp.series('sourcemaps','copy:font','prefix','make'));
 gulp.task('fast-build',gulp.series('stylus','prefix','jade','copy:js','ftp'));
 
 

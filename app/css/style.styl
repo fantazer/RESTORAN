@@ -634,3 +634,212 @@ body
 .footer-menu
 	flex(between)
 	flex-wrap wrap
+	
+//.catalog.container
+//.catalog-wraper
+.catalog-title
+	background #EBECEC
+	height 70px
+	flex(mid)
+	
+.catalog-title-text
+	size 264px 64px
+	background-color white
+	border-radius 20px
+	flex(mid)
+	margin-top -50px
+	color #738f97
+	font-family "Century Gothic"
+	font-size 24px
+	font-weight 700
+	line-height 66px
+	text-transform uppercase
+	
+.dropdown-menu
+	a:hover
+		background dark-blue!important
+		color white!important
+
+.cotalog-left
+	col(1/5)
+.cotalog-right
+	col(4/5)
+.cotalog-right-top
+	flex(between)
+.cotalog-right-top-el
+	
+	flex(between)
+	&:last-child
+		width 200px
+		.bootstrap-select
+			width 40%!important
+.cotalog-right-top-el-text
+	margin-right 10px
+
+.catalog-block
+	margin-top 40px
+
+.cotalog-right-wraper
+	flex(between)
+	flex-wrap wrap
+.cotalog-right-el
+	margin 20px 0
+	border-radius 8px
+	border 1px solid #E0E5E8
+	margin-right 10px
+	width 30%
+	flex(between)
+	flex-flow column
+
+.cotalog-right-el-img
+	margin 20px 0
+.cotalog-right-el-title
+	color #2d3e50
+	font-family "Century Gothic"
+	font-size 15px
+	font-weight 400
+	line-height 22px
+	text-transform uppercase
+	background #EBECEC
+	width 100%
+	text-align center
+	padding 10px
+.cotalog-right-el-info
+	flex(between)
+	width 100%
+	padding 10px
+.cotalog-right-el-info-isset
+	color #00A06D
+	font-family "PT Sans"
+	font-size 15px
+	font-weight 400
+	line-height 22px
+.cotalog-right-el-info-price
+	color #6982ce
+	font-family "Century Gothic"
+	font-size 16px
+	font-weight 700
+	line-height 22px
+	text-transform uppercase
+.cotalog-right-el-get
+	width 100%
+	color white
+	font-family "Century Gothic"
+	font-size 16px
+	font-weight 400
+	line-height 22px
+	text-transform uppercase
+	gradient:#2F3F93 #112351
+	text-align center
+	padding 10px
+	border-radius 0px 0px 8px 8px
+	
+//.catalog-block
+.cotalog-left
+	padding-right 20px
+.cotalog-left-menu
+	margin-top 50px
+	margin-bottom 50px
+.cotalog-left-menu-el
+	&>a
+		font-family "PT Sans"
+		font-size 18px
+		font-weight 700
+		padding 5px 15px
+		border-radius 6px
+		border 1px solid #e0e5e8
+		margin-bottom 5px
+		color #05546C
+		display inline-block
+		width 100%
+	.active
+		color white
+		background #5C83D2 
+.cotalog-left-menu-el-sub
+	a
+		display inline-block
+		width 100%
+		font-family "PT Sans"
+		font-size 18px
+		font-weight 400
+		line-height 29px
+		color #05546c
+		text-decoration underline
+		padding-left 30%
+.cotalog-left-filter
+	background-color #EBECEC
+	border 1px solid #e0e5e8
+	border-radius 7px 7px 0 0
+	padding 10px 15px
+	
+input[type="checkbox"] {
+	display:none;
+}
+
+input[type="checkbox"] + label span {
+	display:inline-block;
+	width:19px;
+	height:19px;
+	margin:-1px 4px 0 0;
+	vertical-align:middle;
+	background:url(/img/check-box.png);
+	cursor:pointer;
+	background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + label span {
+	background:url(/img/check-box-select.png);
+	background-repeat: no-repeat;
+}
+.cotalog-left-filter-title
+	flex(between)
+	border-bottom 1px solid #D3DDDD
+	margin-bottom 10px
+	i
+		color #05546c
+.cotalog-left-filter-title-text
+	color #05546c
+	font-family "PT Sans"
+	font-size 18px
+	font-weight 700
+	padding-bottom 5px
+
+
+/*.cotalog-left-filter-checkbox*/
+.cotalog-left-filter-checkbox-el
+	margin-bottom 5px
+	text
+		color #05546c
+		font-family "PT Sans"
+		font-size 16px
+		font-weight 400
+		line-height 30px
+
+.filter-ruler
+	margin-top 30px
+	margin-bottom 30px
+
+//.cotalog-left-filter-char 
+.cotalog-left-filter-char-el 
+	.bootstrap-select
+		width 100% !important
+		margin-bottom 10px
+		color #527686!important
+.cotalog-left-filter-char-el-text 
+	font-family "PT Sans"
+	font-size 14px
+	font-style italic
+	color #527686
+	
+.cotalog-left-filter-footer
+	border-radius 0 0 7px 7px
+	flex(mid)
+	background #5C83D2
+	width 100%
+	padding 10px
+	a
+		color white
+		font-family "Century Gothic"
+		font-size 16px
+		font-weight 700
+		text-transform uppercase

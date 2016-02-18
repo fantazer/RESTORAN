@@ -3,38 +3,7 @@ html(lang="en")
 	//Include header
 	include ./block_html/head.jade
 body
-	.header
-		.container
-			.top-menu
-				div.top-menu-search-blcok
-					img(src="img/icon-serch.png", alt="")
-					input(type="text")
-				a(href="#").top-menu-el О компании
-				a(href="#").top-menu-el Услуги 
-				a(href="#").top-menu-el Обучение
-				a(href="#").top-menu-el Контакты
-				a(href="#").top-menu-el Возможности iiko
-				a(href="#").top-menu-el Скачать TeamViawer
-				div.top-menu-enter
-					a(href="#").top-menu-el Вход
-					img(src="img/icon-lock.png", alt="")
-
-	.header-contact
-		.container
-			.header-contact-wraper
-				.header-contact-logo
-					img(src="img/logo.png", alt="")
-				.header-contact-but
-					a(href="#") Онлайн заказ
-					a(href="#") Онлайн резерв
-				.header-contact-callBack
-					.header-contact-callBack-text обратный <br> ЗВОНОК
-					img(src="img/icon-call.png", alt="")
-				.header-contact-numbers
-					span +7 (812) 600-44-95
-					span +7 (812) 676-88-77
-					span 8 800 505 72 50
-
+	include ./block_html/header.jade
 	.main-baner
 		.container
 			.main-baner-wraper
@@ -215,41 +184,8 @@ body
 										span подробнее
 								.seminars-items-left
 									img(src="img/avatar-2.png", alt="")
-
-	.footer
-		.container
-			.footer-wrap
-				.footer-title Мы в социальных сетях
-				.footer-soc
-					img(src="img/icon-vk.png", alt="")
-					img(src="img/facebook-icon.png", alt="")
-					img(src="img/livejournal-icon.png", alt="")
-		.footer-lineMenu
-			a(href="#") Наша миссия
-			a(href="#") Наши ценности
-			a(href="#") Наша Новости
-			a(href="#") Наша Статьи
-		.container
-			.footer-menu
-				- for (var x = 0; x < 5; x++)
-					.footer-vertMenu-el
-						.footer-vertMenu-el-title Решения
-						a(href="#")  Lorem ipsum dolor.
-						a(href="#")  Lorem ipsum dolor.
-						a(href="#")  Lorem ipsum dolor.
-						a(href="#")  Lorem ipsum dolor.
-						a(href="#")  Lorem ipsum dolor.
-		.footer-bottom
-			.container
-				.footer-bottom-wraper
-					.footer-bottom-el © Ресторан Сервис Инфо. 2008-2015
-					.footer-bottom-el +7 (812) 600-44-95  |  заказать обратный звонок
-					.footer-bottom-el 
-						img(src="img/jq.png", alt="")
-
-
-
-
+										
+	include ./block_html/footer.jade
 
 	//Include Footer
 	include ./block_html/script.jade

@@ -46,6 +46,10 @@ $(document).ready(function(){
 			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
 	 	}
 	 ); 	
+	$('.selectpicker').selectpicker({
+	
+	});
+
 	/* ###### init validate form  ######*/
 	/* ###### bower i jquery-validation ######*/
 	/*$('#myform').validate({
