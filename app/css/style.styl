@@ -10,29 +10,627 @@ rupture.scale = 0 400px 600px 780px 960px 1300px
 rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 jeet.gutter = 1
 
+a
+	text-decoration none
+
 wraper
 	center(1200px)
 	padding 20px
 
 body
-	font-family 'Open Sans'
-	background #ccc
-	padding 40px
-	transtion all .4s
+	font-family 'PT Sans'
 
-.main-news-items-title
-	font-size 26px
-	
-.main-news-items
-	col(1/4,cycle:4)
-	font-size 12px
-	margin-top 20px
-	padding-right 20px
-.main-news
+.container
+	center(1100px)
+
+.header
+	background dark-blue
+	.container
+		height 65px
+
+.top-menu
+	flex(between)
+	align-items center
+	height 100%
+	a
+		color white
+	input
+		background #005D90
+		border 0px
+		border-bottom 1px solid white
+		color white
+		padding 0px 10px
+.top-menu-search-blcok
+	flex(between)
+
+.top-menu-enter
+	flex(between)
+	img
+		margin-left 10px
+		
+
+.header-contact-wraper
+		flex(between)
+		height 115px
+//.header-contact-logo
+.header-contact-but
+	a
+		size 168px 37px
+		border 2px solid #29648d
+		border-radius 7px
+		box-shadow 1.5px 1.4px 2px rgba(113, 130, 166, 0.77)
+		color #29648d
+		font-family "PT Sans"
+		font-size 16px
+		font-weight 400
+		line-height 24px
+		text-transform uppercase
+		padding 5px 20px
+		&:nth-child(1)
+			margin-right 10px
+.header-contact-callBack
+	flex(between)
+.header-contact-numbers
 	flex(mid)
-	flex-wrap wrap
-
-header
-	width 100%
+	flex-flow column
+	color dark-blue
+	
+.main-baner
+	padding 150px 0px
+	flex(mid)
+	flex-flow column 
+	bgi('bg-1.png')
+	background-size cover
+.main-baner-title 
+	font-family "PT Sans Caption"
+	font-weight 700
+	line-height 66px
+	text-transform uppercase
+	font-size 48px
+	text-align center
+	color #F3F4F5
+	margin-bottom 30px
+.main-baner-text 
+	flex(mid)
+	align-items flex-start
+	border-bottom 1px solid snow
+	p
+		color #DDE0E5
+		margin 0px
+		margin-bottom 30px
+.main-baner-text-left
+	margin-right 20px 
+	
+.line-icon-avtomat 
+	background #F7F7F7
+.line-icon-avtomat-wraper 
 	background white
-	height 200px
+	padding-top 45px
+	flex(mid)
+	flex-flow column
+.line-icon-avtomat-icon 
+	flex(mid)
+	margin-bottom 100px
+	padding 0 30px
+	hr
+		width 100px
+		border 1px solid light-blue
+		margin-top -40px
+.line-icon-avtomat-title 
+	color #738f97
+	font-size 28px
+	font-weight 700
+	line-height 23px
+	text-transform uppercase
+	text-align center
+	margin-bottom 100px
+.line-icon-avtomat-icon-items 
+	flex(around)
+	flex-flow column
+.line-icon-avtomat-icon-items-img 
+	bgi('circle-icon.png')
+	background-size cover
+	height 100px
+	width 100px
+	flex(mid)
+	&:hover
+		bgi('circle-icon-active.png')
+		cursor pointer
+		background-size cover
+	img
+		width 54px
+		height 54px
+		
+.line-icon-avtomat-icon-items-text
+	width 80%
+	text-align center 
+	color #6a6c6f
+	font-family "PT Sans"
+	font-size 18px
+	font-style italic
+	line-height 23px
+	
+.consalt-block 
+	bgi('bg-2.png')
+	background-size cover
+.consalt-block-wraper
+	flex(mid)
+	flex-flow column 
+.consalt-block-title 
+	color #738f97
+	font-size 30px
+	font-weight 700
+	line-height 66px
+	text-transform uppercase
+	color light-blue
+	padding 5px 30px
+	background-color white
+	border-radius 20px
+	margin-top -20px
+	margin-bottom 20px
+	
+.consalt-block-text 
+	color white
+	text-align center
+	width 80%
+	margin-bottom 20px
+.consalt-block-column 
+	flex(between)
+	width 100%
+.consalt-block-column-el 
+	height 440px
+	width 300px
+	border 8px solid #eaebec
+	border-radius 7px 7px 0px 0px
+	border-bottom 0px
+	padding-top 20px
+	flex(mid)
+	flex-flow column
+	justify-content:  flex-start
+	&:hover
+		background #183970
+.consalt-block-column-el-title
+	font-size 24px
+	font-weight 700
+	line-height 24px
+	text-transform uppercase 
+	color white
+	margin-bottom 75px
+.consalt-block-column-el-text 
+	color white
+	text-decoration underline
+	margin-bottom 50px
+	position relative
+	&:after
+		content ''
+		width 10px
+		height 10px
+		border-radius 50%
+		left 50%
+		margin-left -5px
+		position absolute
+		background white
+		bottom -30px
+	&:last-child
+		&:after
+			content ''
+			width 0
+			height 0
+			
+.grey-title
+	background #EBECEC
+	padding 40px 0px
+	flex(mid)
+	padding-bottom 80px
+.grey-title-text
+	color #31556b
+	font-family "Century Gothic"
+	font-size 34px
+	font-weight 400
+	text-align center
+	width 40%
+	line-height 48px
+	
+//.parters 
+.parters-wraper 
+	flex(mid)
+	flex-flow column
+.parters-top-but
+	width 375px
+	height 60px
+	bgi('button-dark.png')
+	background-size cover
+	flex(mid)
+	font-family "Century Gothic"
+	font-size 18px
+	font-weight 700
+	line-height 23px
+	text-transform uppercase
+	color white
+	margin-top -30px
+//.parters-line-buttons 
+.parters-line-buttons-items
+	height: 37px;
+	border: 2px solid #29648d;
+	border-radius: 7px;
+	box-shadow: 1.5px 1.4px 2px rgba(113,130,166,0.77);
+	color: #29648d;
+	font-family: "PT Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	display inline-block
+	&:first-child
+		margin-right 10px
+		margin-top 60px
+		margin-bottom 30px
+.parters-slider
+	position relative
+	margin-bottom 30px
+	i
+		font-size 60px
+		color light-blue
+	.owl-prev
+		position absolute
+		top 50%
+		left -60px
+		margin-top -40px
+	.owl-next
+		position absolute
+		top 50%
+		right -60px
+		margin-top -40px
+	
+.parters-list 
+	margin-bottom 60px
+	li
+		color #31556b
+		font-family "Century Gothic"
+		font-size 14px
+		font-weight 400
+		line-height 24px
+		
+.study
+	bgi('bg-3.png')
+.study-wraper
+	flex(mid)
+	flex-flow column
+.study-title
+	width 345px
+	height 65px
+	background-color white
+	border-radius 20px
+	color #738f97
+	font-family "Century Gothic"
+	font-size 30px
+	font-weight 700
+	line-height 66px
+	text-transform uppercase
+	text-align center
+	margin-top -20px
+.study-text
+	color white
+	margin 30px 0
+	text-align center
+	width 60%
+.study-column
+	border 2px solid #e8e8e8
+	border-radius 7px
+	flex(between)
+	width 100%
+	height 280px
+	margin-bottom 100px
+.study-column-items
+	width 100%
+	height 100%
+	flex(mid)
+	flex-flow column
+	border-right 2px solid #e8e8e8
+	&:hover
+		background #1B3C75
+	&:last-child
+		border 0px
+//.study-column-items-img
+.study-column-items-text
+	color white
+	text-transform uppercase
+	text-align center
+	width 80%
+	font-size 22px
+.study-arrow
+	margin-bottom 20px
+	
+
+.rewiev
+	background #EBECEC
+.rewiev-wraper
+	flex(mid)
+	flex-flow column
+.rewiev-title 
+	color #31556b
+	font-family "Century Gothic"
+	font-size 32px
+	font-weight 700
+	line-height 24px
+	text-transform uppercase
+	text-align center
+	margin 30px 0
+.rewiev-slider
+	position relative
+	i
+		font-size 60px
+		color light-blue
+	.owl-prev
+		position absolute
+		top 50%
+		left -60px
+		margin-top -40px
+	.owl-next
+		position absolute
+		top 50%
+		right -60px
+		margin-top -40px
+	
+.parters-list 
+	margin-bottom 60px
+	li
+		color #31556b
+		font-family "Century Gothic"
+		font-size 14px
+		font-weight 400
+		line-height 24px
+		
+.rewiev-slider-el
+	flex(mid)
+
+.rewiev-slider-el-img
+	width 80%
+	margin-right 40px
+	img
+		margin 20px auto
+.rewiev-wraper
+	padding-bottom 100px
+//.rewiev-slider-el-info
+.rewiev-slider-el-info-name
+	color #52659e
+	font-family "PT Sans"
+	font-size 20px
+	font-weight 700
+	line-height 24px
+.rewiev-slider-el-info-prof
+	color #5e6668
+	font-family "PT Sans"
+	font-size 15px
+	font-style italic
+	line-height 24px
+	border-bottom 1px solid #CACACA
+	margin-bottom 10px
+.rewiev-slider-el-info-text
+	color #2e3c4b
+	font-family "Century Gothic"
+	font-size 14px
+	font-weight 400
+	line-height 24px
+	
+//.news 
+.news-wraper 
+	flex(mid)
+	flex-flow column
+	background #FFFFFF
+.news-but
+	width 375px
+	height 60px
+	bgi('button-dark.png')
+	background-size cover
+	flex(mid)
+	font-family "Century Gothic"
+	font-size 18px
+	font-weight 700
+	line-height 23px
+	text-transform uppercase
+	color white
+	margin-top -30px 
+.news-title
+	margin 60px 0
+	color #31556b
+	font-family "Century Gothic"
+	font-size 24px
+	font-weight 700
+	line-height 24px
+	text-transform uppercase
+.news-column 
+	flex(between) 
+	margin-bottom 40px
+.news-column-el
+	border 2px solid #29648d
+	border-radius 7px
+	box-shadow 1.5px 1.4px 2px rgba(113, 130, 166, 0.77)
+	padding 20px
+	margin-right 30px
+	flex(mid)
+	flex-flow column
+.news-column-el-date
+	color #4C689E
+	font-size 48px
+	font-weight 400
+	text-transform uppercase 
+	font-family tahoma
+.news-column-el-day 
+	color #4C689E
+	font-family "PT Sans"
+	font-size 18px
+	font-weight 700
+.news-column-el-year
+	color #4C689E 
+	font-size 16px
+	font-weight 400
+	text-transform uppercase
+	margin-bottom 20px
+.news-column-el-text 
+	color #3f4346
+	font-family "PT Sans"
+	font-size 15px
+	font-weight 400
+	line-height 22px
+	margin-bottom 40px
+.news-column-el-href 
+	color #5676d4
+	font-family "PT Sans"
+	font-size 16px
+	font-weight 400
+	line-height 22px
+	text-decoration underline
+	
+//.seminars
+//.seminars-wraper
+.seminars-title
+	color dark-blue
+	font-family "PT Sans"
+	font-size 20px
+	font-weight 700
+	line-height 20px
+	text-align center
+	margin 30px 0
+	text-transform uppercase
+
+.seminars-colum
+	flex(between)
+	align-items flex-start
+	
+.seminars-left,
+.seminars-right
+	width 49%
+.seminars-items-el
+	background #EBECEC
+	margin-bottom 30px
+	padding 15px
+	height 160px
+.seminars-left
+	display flex
+	flex-wrap: wrap
+	justify-content flex-end
+	.seminars-items-el
+		width 100%
+	.seminars-items-wrap
+		justify-content flex-end
+		margin-right 50px
+		img
+			margin-right 30px
+.seminars-right
+	display flex
+	flex-wrap: wrap
+	justify-content flex-start
+	.seminars-items-el
+		width 100%
+	.seminars-items-wrap
+		margin-left 50px
+		justify-content flex-start
+		img
+			margin-left 30px
+		
+
+//.seminars-items-left
+.seminars-items-right
+	flex(mid)
+	flex-flow column
+.seminars-items-right-title
+	color #364365
+	font-family "PT Sans"
+	font-size 20px
+	font-weight 700
+	line-height 20px
+	width 300px
+	text-align center
+.seminars-items-right-text
+	font-family "PT Sans"
+	font-size 16px
+	font-weight 700
+	line-height 20px
+	text-align center
+	margin-top 15px
+	a
+		text-transform uppercase
+		margin-right 10px
+		color #5780D1
+		
+	
+.seminars-items-but
+	size 183px 43px
+	text-align center
+	bgi('but-more.png')
+	display inline-block
+	flex(mid)
+	color white
+	color white
+	font-family "Century Gothic"
+	font-size 16px
+	font-weight 700
+	line-height 23px
+	text-transform uppercase
+	margin-top 40px
+.seminars-items-wrap
+	flex(mid)
+	justify-content flex-end
+	align-items flex-start
+
+.footer
+	background #005D90
+	margin-top 60px
+	padding-top 20px
+//.footer-wrap
+.footer-title
+	color white
+	font-family "Century Gothic"
+	font-size 18px
+	font-weight 400
+	line-height 24px
+	text-align center
+	margin-bottom 20px
+.footer-soc
+	flex(mid)
+	margin-bottom 20px
+	img
+		margin 10px
+.footer-lineMenu
+	background #004C81
+	padding 10px
+	flex(mid)
+	margin-bottom 40px
+	a
+		color white
+		font-family "Century Gothic"
+		font-size 15px
+		font-weight 400
+		line-height 24px
+		margin-right 40px
+.footer-vertMenu-el
+	border-left 1px solid #3180AB
+	flex(mid)
+	flex-flow column
+	padding-left 10px
+	justify-content flex-start
+	align-items flex-start
+	a
+		color white
+		font-size 13px
+		margin-bottom 15px
+.footer-vertMenu-el-title
+	color white
+	font-family "Century Gothic"
+	font-size 14px
+	font-weight 400
+	line-height 24px
+	margin-bottom 20px
+.footer-bottom
+	background #004C81
+	margin-top 30px
+.footer-bottom-wraper
+	padding 5px
+	color white
+	flex(between)
+//.footer-bottom-el
+.footer-menu
+	flex(between)
+	flex-wrap wrap

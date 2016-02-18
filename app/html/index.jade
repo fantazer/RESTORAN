@@ -3,12 +3,253 @@ html(lang="en")
 	//Include header
 	include ./block_html/head.jade
 body
-	wraper
-		header
-		.main-news
-			- for (var x = 0; x <2; x++)
-				.main-news-items
-					.main-news-items-title Новая статья!!!
-					.main-news-items-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores totam reiciendis magnam veritatis maiores, ipsa molestiae quidem, iure accusamus dicta, reprehenderit? Voluptatibus, corporis sunt velit ullam. Sequi magni, repellendus voluptatem!
+	.header
+		.container
+			.top-menu
+				div.top-menu-search-blcok
+					img(src="img/icon-serch.png", alt="")
+					input(type="text")
+				a(href="#").top-menu-el О компании
+				a(href="#").top-menu-el Услуги 
+				a(href="#").top-menu-el Обучение
+				a(href="#").top-menu-el Контакты
+				a(href="#").top-menu-el Возможности iiko
+				a(href="#").top-menu-el Скачать TeamViawer
+				div.top-menu-enter
+					a(href="#").top-menu-el Вход
+					img(src="img/icon-lock.png", alt="")
+
+	.header-contact
+		.container
+			.header-contact-wraper
+				.header-contact-logo
+					img(src="img/logo.png", alt="")
+				.header-contact-but
+					a(href="#") Онлайн заказ
+					a(href="#") Онлайн резерв
+				.header-contact-callBack
+					.header-contact-callBack-text обратный <br> ЗВОНОК
+					img(src="img/icon-call.png", alt="")
+				.header-contact-numbers
+					span +7 (812) 600-44-95
+					span +7 (812) 676-88-77
+					span 8 800 505 72 50
+
+	.main-baner
+		.container
+			.main-baner-wraper
+				.main-baner-title Система создана рестораторами <br> для рестораторов
+				.main-baner-text
+					.main-baner-text-left
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deserunt impedit, quia omnis laudantium dolorum magni eligendi architecto quae dignissimos? Soluta molestiae, minus nesciunt nostrum quis dolores nulla et saepe expedita earum atque ex, tempora eveniet, architecto, provident iure eum.
+
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deserunt impedit, quia omnis laudantium dolorum magni eligendi architecto quae dignissimos? Soluta molestiae, minus nesciunt nostrum quis dolores nulla et saepe expedita earum atque ex, tempora eveniet, architecto, provident iure eum.
+
+					.main-baner-text-right
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repudiandae numquam quibusdam dignissimos ullam, similique odio vitae! Dolores facere consectetur praesentium assumenda qui quam incidunt, expedita doloremque sit beatae omnis sint laboriosam a harum, voluptatibus cum, quae quo! Deserunt, atque.
+
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deserunt impedit, quia omnis laudantium dolorum magni eligendi architecto quae dignissimos? Soluta molestiae, minus nesciunt nostrum quis dolores nulla et saepe expedita earum atque ex, tempora eveniet, architecto, provident iure eum.
+
+	.line-icon-avtomat
+		.container
+			.line-icon-avtomat-wraper
+				.line-icon-avtomat-title Система автоматизации заказов
+				.line-icon-avtomat-icon
+					.line-icon-avtomat-icon-items
+						.line-icon-avtomat-icon-items-img
+							img(src="img/icon-Setting.png", alt="")
+						.line-icon-avtomat-icon-items-text Автоматизация ресторана
+					hr
+					.line-icon-avtomat-icon-items
+						.line-icon-avtomat-icon-items-img
+							img(src="img/icon-support.png", alt="")
+						.line-icon-avtomat-icon-items-text Техническая поддержка
+					hr
+					.line-icon-avtomat-icon-items
+						.line-icon-avtomat-icon-items-img
+							img(src="img/icon-truck.png", alt="")
+						.line-icon-avtomat-icon-items-text Автоматизация службы доставки
+					hr
+					.line-icon-avtomat-icon-items
+						.line-icon-avtomat-icon-items-img
+							img(src="img/icon-key.png", alt="")
+						.line-icon-avtomat-icon-items-text Запуск модулей iiko под ключ
+
+	.consalt-block
+		.container
+			.consalt-block-wraper
+				.consalt-block-title Консалтинг и учет вашего ресторана
+				.consalt-block-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates laboriosam, perspiciatis cum magnam ipsam. Vitae laudantium laboriosam dicta, facilis accusamus ratione alias, beatae pariatur voluptatem praesentium quasi officiis qui assumenda non omnis quaerat? Distinctio sed placeat suscipit repellat eos in?
+				.consalt-block-column
+					.consalt-block-column-el
+						.consalt-block-column-el-title Консалтинг
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+					.consalt-block-column-el
+						.consalt-block-column-el-title Учет
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+					.consalt-block-column-el
+						.consalt-block-column-el-title Аутсорсинг
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+						a(href="#").consalt-block-column-el-text  Lorem ipsum dolor sit amet.
+
+	.grey-title
+		.grey-title-text Первая ежегодная премия в области ресторанного бизнеса от компании РесторанСервисИнфо
+
+	.parters
+		.container
+			.parters-wraper
+				a(href="#").parters-top-but
+					span Узнать о премии
+				.parters-line-buttons
+					a(href="#").parters-line-buttons-items Наши партнеры
+					a(href="#").parters-line-buttons-items Наши клиенты
+				.parters-slider.owl-carousel
+					img(src="img/partners.png", alt="")
+					img(src="img/partners.png", alt="")
+					img(src="img/partners.png", alt="")
+					img(src="img/partners.png", alt="")
+				.parters-list
+					ul
+						li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda eius itaque recusandae iure corporis quis ab delectus debitis commodi!
+						li Ducimus aliquid deserunt laudantium consequuntur laborum quas libero cumque rerum, eaque error, eligendi ipsa, cupiditate officiis magni vel dignissimos fugiat?
+						li Eveniet fuga, molestias eos dolore dicta, recusandae explicabo quos modi placeat dolorem accusantium, sapiente ipsa tempora perspiciatis autem deleniti quia!
+						li Ipsum inventore ad ducimus ex, magnam, nam omnis neque voluptatibus maxime, obcaecati rem eum at rerum necessitatibus autem quas, quidem.
+						li Autem fugiat ut, saepe molestiae harum magnam, odio aut. Quas dolore corrupti aut. Laborum corporis voluptatibus tenetur voluptates blanditiis voluptas?
+						li Impedit quos, dignissimos reprehenderit at fuga quae! Totam neque officiis maxime, fugiat quisquam itaque quia ad a aliquid reprehenderit molestiae!
+						li Facilis culpa laboriosam error accusantium veniam fugit laborum, id, eius eligendi officia nesciunt cum nobis, molestiae omnis quam quis iste.
+						li Suscipit quaerat tenetur, quidem voluptates error ullam doloribus ab delectus numquam minus iste quod tempora, iusto tempore, magni eligendi mollitia!
+						li Eos eligendi vero accusantium laboriosam impedit a laudantium provident magni dolorum amet, atque quo culpa neque aperiam, minima odio voluptates.
+						li Dolorum molestias explicabo, reprehenderit quasi labore voluptatem similique debitis molestiae quaerat sint beatae sapiente perferendis optio i
+
+	.study
+		.container
+			.study-wraper
+				.study-title Обучение
+				.study-text Для того, чтобы рестораны могли уверенно пользоваться всеми возможностями истемы,мы разработали несколько курсов обучения, проводим семинары и другие мероприятия
+				.study-column
+					.study-column-items
+						.study-column-items-img
+							img(src="img/icon-imac.png", alt="")
+						.study-column-items-text ONLYNE-КУРСЫ
+					.study-column-items
+						.study-column-items-img
+							img(src="img/icon-mick.png", alt="")
+						.study-column-items-text Семинары
+					.study-column-items
+						.study-column-items-img
+							img(src="img/icon-note.png", alt="")
+						.study-column-items-text индивидуальное обучение по iiko
+					.study-column-items
+						.study-column-items-img
+							img(src="img/icon-calck.png", alt="")
+						.study-column-items-text школа калькуляторов
+				img(src="img/arrow-down.png", alt="").study-arrow
+
+	.rewiev
+		.container
+			.rewiev-wraper
+				.rewiev-title Отзывы
+				.rewiev-slider.owl-carousel
+					.rewiev-slider-el
+						.rewiev-slider-el-img
+							img(src="img/avatar-1.png", alt="")
+						.rewiev-slider-el-info
+							.rewiev-slider-el-info-name  Ирина Попова
+							.rewiev-slider-el-info-prof  Lorem ipsum dolor sit amet.
+							.rewiev-slider-el-info-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis necessitatibus quibusdam accusamus, iusto quae dolore laborum modi impedit animi, exercitationem voluptatibus rerum adipisci ipsa, laboriosam itaque consequuntur ducimus sunt blanditiis. Fugiat odit dolores nihil commodi? Numquam laudantium harum velit?
+					.rewiev-slider-el
+						.rewiev-slider-el-img
+							img(src="img/avatar-1.png", alt="")
+						.rewiev-slider-el-info
+							.rewiev-slider-el-info-name  Ирина Попова
+							.rewiev-slider-el-info-prof  Lorem ipsum dolor sit amet.
+							.rewiev-slider-el-info-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis necessitatibus quibusdam accusamus, iusto quae dolore laborum modi impedit animi, exercitationem voluptatibus rerum adipisci ipsa, laboriosam itaque consequuntur ducimus sunt blanditiis. Fugiat odit dolores nihil commodi? Numquam laudantium harum velit?
+
+	.news
+		.container
+			.news-wraper
+				a(href="#").news-but Читать все новости
+				.news-title новости компании
+				.news-column
+					- for (var x = 0; x < 3; x++)
+						.news-column-el
+							.news-column-el-date 12
+							.news-column-el-day декабря
+							.news-column-el-year 2015
+							.news-column-el-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus culpa voluptatibus nulla sequi, ipsam enim. Dolore veniam, cum incidunt harum suscipit delectus perspiciatis consequatur, ad nam eos blanditiis! Dicta aut reiciendis atque aperiam dolorem quia voluptatem dolores iste exercitationem suscipit.
+							a(href="#").news-column-el-href Подробнее
+
+	.seminars
+		.container
+		.seminars-wraper
+			.seminars-title Семинары
+			.seminars-colum
+				.seminars-left
+					- for (var x = 0; x < 2; x++)
+						.seminars-items-el
+								.seminars-items-wrap
+									.seminars-items-left
+										img(src="img/avatar-2.png", alt="")
+									.seminars-items-right
+										.seminars-items-right-title Прием заказов в call-центр от нового клиента
+										.seminars-items-right-text
+											a(href="#") новый старт
+											span 20.10.2015
+										a(href="#").seminars-items-but
+											span подробнее
+				.seminars-right
+					- for (var x = 0; x < 2; x++)
+						.seminars-items-el
+							.seminars-items-wrap
+								.seminars-items-right
+									.seminars-items-right-title Прием заказов в call-центр от нового клиента
+									.seminars-items-right-text
+										a(href="#") новый старт
+										span 20.10.2015
+									a(href="#").seminars-items-but
+										span подробнее
+								.seminars-items-left
+									img(src="img/avatar-2.png", alt="")
+
+	.footer
+		.container
+			.footer-wrap
+				.footer-title Мы в социальных сетях
+				.footer-soc
+					img(src="img/icon-vk.png", alt="")
+					img(src="img/facebook-icon.png", alt="")
+					img(src="img/livejournal-icon.png", alt="")
+		.footer-lineMenu
+			a(href="#") Наша миссия
+			a(href="#") Наши ценности
+			a(href="#") Наша Новости
+			a(href="#") Наша Статьи
+		.container
+			.footer-menu
+				- for (var x = 0; x < 5; x++)
+					.footer-vertMenu-el
+						.footer-vertMenu-el-title Решения
+						a(href="#")  Lorem ipsum dolor.
+						a(href="#")  Lorem ipsum dolor.
+						a(href="#")  Lorem ipsum dolor.
+						a(href="#")  Lorem ipsum dolor.
+						a(href="#")  Lorem ipsum dolor.
+		.footer-bottom
+			.container
+				.footer-bottom-wraper
+					.footer-bottom-el © Ресторан Сервис Инфо. 2008-2015
+					.footer-bottom-el +7 (812) 600-44-95  |  заказать обратный звонок
+					.footer-bottom-el 
+						img(src="img/jq.png", alt="")
+
+
+
+
+
 	//Include Footer
 	include ./block_html/script.jade

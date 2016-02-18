@@ -24,18 +24,28 @@ $(document).ready(function(){
 	/* ###### init OwlCarousel2  ######*/
 	/*!!! add class owlCarousel !!!*/
 	/* ###### bower i OwlCarousel2 ######*/
-	// $("#owl-example").owlCarousel({
-	//  	items : 1,
-	//  	margin:50,
-	//  	autoHeight : true,
-	//  	pagination : false,
-	//  	autoPlay : true,
-	//  	singleItem:true,
-	//  	nav:true,
-	// 		navText:['<i class="fa fa-arrow-circle-o-left"></i>','<i class="fa fa-arrow-circle-o-right"></i>']
-	//  	}
-	//  ); 	
+	$(".parters-slider").owlCarousel({
+	 	items : 1,
+	 	margin:50,
+	 	autoHeight : true,
+	 	pagination : false,
+	 	autoPlay : true,
+	 	singleItem:true,
+	 	nav:true,
+			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+	 	}
+	 );
 
+	$(".rewiev-slider").owlCarousel({
+	 	items : 1,
+	 	autoHeight : true,
+	 	pagination : false,
+	 	autoPlay : true,
+	 	singleItem:true,
+	 	nav:true,
+			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+	 	}
+	 ); 	
 	/* ###### init validate form  ######*/
 	/* ###### bower i jquery-validation ######*/
 	/*$('#myform').validate({
